@@ -31,7 +31,7 @@ span {
   position: absolute;
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
+  overflow: scroll;
   background-image: linear-gradient(161.15deg, #daead9 12.73%, #c4e0c6 72.95%);
 
   top: 0;

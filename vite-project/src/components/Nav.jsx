@@ -1,13 +1,13 @@
 import React from "react";
-import "./App.css";
+import "../App.css";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { motion } from "framer-motion";
-import logo from "./assets/logo.png"; // with import
+import logo from "../assets/logo.png"; // with import
 
 function NavElement(props) {
   return (
     <motion.button
-      className="px-4 py-6 md:py-2 rounded-md bg-gray-400 text-slate-600 hover:text-slate-600 hover:bg-orange-400 font-semibold "
+      className="px-4 py-6 md:py-2 rounded-md bg-slate-400 text-slate-900 hover:text-slate-600 hover:bg-orange-400 font-semibold "
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       whileHover={{ scale: 1.05 }}
@@ -32,9 +32,7 @@ export default function Nav() {
           <img src={logo} alt="logo" className="w-12 h-12" />
         </motion.span>
         <ul className="flex gap-4">
-          <li>
-            <BsFillMoonStarsFill className="cursor-pointer text-3xl" />
-          </li>
+          <BsFillMoonStarsFill className="cursor-pointer text-3xl mt-2 mr-2" />
           <NavElement href="/">Home</NavElement>
           <NavElement href="/">Works</NavElement>
           <NavElement href="/">Contact</NavElement>

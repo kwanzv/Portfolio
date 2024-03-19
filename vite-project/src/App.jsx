@@ -1,7 +1,9 @@
 import React from "react";
-import "./App.css";
-import Nav from "./Nav";
-import Landing from "./Landing.jsx";
+import "../App.css";
+import Nav from "./components/Nav";
+import Landing from "./components/Landing.jsx";
+import Projects from "./components/Projects.jsx";
+
 export default function App() {
   return (
     <>
@@ -11,8 +13,10 @@ export default function App() {
             <div className="gradient-one"></div>
             <div className="gradient-two"></div>
           </div>
+
           <Nav />
           <Landing />
+          <Projects />
         </main>
       </div>
     </>
